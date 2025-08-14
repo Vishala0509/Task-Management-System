@@ -1,0 +1,44 @@
+﻿<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">TaskBoard</a>
+    </div>
+</div>
+
+<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+
+<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/" Match="NavLinkMatch.All">
+                <span class="bi bi-kanban-fill" aria-hidden="true"></span> TaskBoard
+            </NavLink>
+        </div>
+    </nav>
+</div>
+
+<style>
+    .bi-kanban-fill {
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0.5rem;
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+
+    .nav-link {
+        border-radius: 4px;
+        margin: 2px 0;
+    }
+
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-link.active {
+            background-color: rgba(255, 255, 255, 0.15);
+            font-weight: 500;
+        }
+</style>
